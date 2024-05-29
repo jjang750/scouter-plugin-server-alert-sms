@@ -128,8 +128,8 @@ public class SMSPlugin {
 
                             assert groupId != null;
 
-                            // Make a request URL using Send SMS api
-                            String url = "http://localhost:8000/api/send-sms";
+                            // Make a request URL using Send SMS api      
+                            String url = conf.getValue("ext_plugin_sms_api_url");
 
                             // Get the agent Name
                             String name = AgentManager.getAgentName(pack.objHash) == null ? "N/A" : AgentManager.getAgentName(pack.objHash);
