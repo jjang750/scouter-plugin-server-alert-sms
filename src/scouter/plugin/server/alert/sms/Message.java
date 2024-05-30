@@ -28,11 +28,11 @@ public class Message {
 
     @SerializedName("groupID")
     private String groupID;
-    private String sms;
+    private String msg;
 
-    public Message(String groupID, String sms) {
+    public Message(String groupID, String msg) {
         this.groupID = groupID;
-        this.sms = sms;
+        this.msg = msg;
     }
 
     public String getGroupID() {
@@ -43,11 +43,11 @@ public class Message {
         this.groupID = groupID;
     }
 
-    public String getSms() {
-        return sms;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setSms(String sms) {
-        this.sms = sms;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 }
